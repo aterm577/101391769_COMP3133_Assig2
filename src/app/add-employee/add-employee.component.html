@@ -1,0 +1,35 @@
+<body>
+<div class="container">
+  <h2>Add Employee</h2>
+  <form (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <label for="first_name">First Name:</label>
+      <input type="text" id="first_name" name="first_name" [(ngModel)]="employeeInput.first_name" required>
+    </div>
+    <div class="form-group">
+      <label for="last_name">Last Name:</label>
+      <input type="text" id="last_name" name="last_name" [(ngModel)]="employeeInput.last_name" required>
+    </div>
+    <div class="form-group">
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" [(ngModel)]="employeeInput.email" required>
+    </div>
+    <div class="form-group">
+      <label for="gender">Gender:</label>
+      <select id="gender" name="gender" [(ngModel)]="employeeInput.gender" required>
+        <option value="Male">Male</option>
+        <option value="Female">Female</option>
+        <option value="Other">Other</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="salary">Salary:</label>
+      <input type="number" id="salary" name="salary" [(ngModel)]="employeeInput.salary" required>
+    </div>
+    <button class="button" type="submit">Add Employee</button>
+  </form>
+  <div class="error-message" *ngIf="error">Error: {{ error }}</div>
+  <div *ngIf="successMessage" class="success-message">{{ successMessage }}</div>
+  <button type="button" (click)="navigateToEmployeeList()" class = "back-button">Back</button>
+</div>
+</body>

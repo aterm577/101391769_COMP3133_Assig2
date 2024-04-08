@@ -1,0 +1,29 @@
+<body>
+  <div class="employee-container">
+    <div class="form-header">
+      <h2>Employee Details</h2>
+    </div>
+
+    <div *ngIf="loading" class="loading-message">Loading...</div>
+
+    <div *ngIf="error" class="error-message">
+      {{ error }}
+    </div>
+
+    <div *ngIf="employee" class="employee-form">
+      <p><strong>First Name:</strong> {{ employee.first_name }}</p>
+      <p><strong>Last Name:</strong> {{ employee.last_name }}</p>
+      <p><strong>Email:</strong> {{ employee.email }}</p>
+      <p><strong>Gender:</strong> {{ employee.gender }}</p>
+      <p><strong>Salary: $</strong> {{ employee.salary }}</p>
+    </div>
+
+    <div class="back-button">
+      <button (click)="goBack()">Back</button>
+    </div>
+  </div>
+</body>
+
+
+
+  

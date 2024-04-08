@@ -1,0 +1,110 @@
+body {
+  margin: -8px;
+  padding: -8px;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to bottom right, #2C64C6, #00CCE5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  background-color: rgba(255, 255, 255, 0.9); 
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 5px 11px rgba(0, 0, 0, 0.1);
+  width: 400px; 
+  text-align: center;
+}
+  
+h2 {
+  margin-bottom: 20px;
+  color: #333;
+}
+  
+.form-group {
+  margin-bottom: 20px;
+}
+  
+label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 8px;
+  color: #333;
+  margin-right: 310px;
+}
+  
+input[type="text"],
+input[type="email"],
+input[type="number"],
+select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.email{
+  margin-right: 348px;
+}
+  
+.gender{
+  margin-right: 348px;
+}
+  
+.salary{
+  margin-right: 346px;
+}
+
+select {
+  appearance: none; 
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image: url('data:image/svg+xml;utf8,<svg fill="%23333" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/><path d="M0 0h24v24H0z" fill="none"/></svg>'); 
+  background-position: right 10px center;
+  background-repeat: no-repeat;
+}
+  
+button[type="submit"] {
+  padding: 12px 20px;
+  background-color: #2C64C6;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+  
+button[type="submit"]:hover {
+  background-color: #4E88E1;
+}
+  
+.error-message {
+  margin-top: 20px;
+  color: red;
+  margin-bottom: 20px;
+}
+.success-message{
+  margin-top: 20px;
+  color: red;
+  margin-bottom: 20px;
+}
+
+.back-button{
+  padding: 12px 20px;
+  background-color: #2C64C6;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-right: 10px;
+  width: 147px;
+}
+
+.back-button:hover {
+  background-color: #4E88E1;
+}
+  

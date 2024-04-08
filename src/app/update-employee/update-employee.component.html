@@ -1,0 +1,38 @@
+<body>
+<div class="container">
+    <h2>Update Employee</h2>
+    <div *ngIf="error" class="error-message">
+      {{ error }}
+    </div>
+    <form [formGroup]="updateForm" (submit)="onSubmit()">
+      <div class="form-group">
+        <label for="first_name">First Name:</label>
+        <input type="text" id="first_name" formControlName="first_name" required>
+      </div>
+      <div class="form-group">
+        <label for="last_name">Last Name:</label>
+        <input type="text" id="last_name" formControlName="last_name" required>
+      </div>
+      <div class="form-group">
+        <label for="email" class = "email">Email:</label>
+        <input type="email" id="email" formControlName="email" required>
+      </div>
+      <div class="form-group">
+        <label for="gender" class = "gender">Gender:</label>
+        <select id="gender" formControlName="gender" required>
+          <option value="Male">Male</option>
+          <option value="Female">Female</option>
+          <option value="Other">Other</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="salary" class = "salary">Salary:</label>
+        <input type="number" id="salary" formControlName="salary" required>
+      </div>
+      <button (click)="navigateToEmployeeList()" class = "back-button">Back</button>
+      <button type="submit" [disabled]="loading">Update Employee</button>
+      <div class="error-message" *ngIf="error">Error: {{ error }}</div>
+      <div *ngIf="successMessage" class="success-message">{{ successMessage }}</div>
+    </form>
+  </div>
+</body>

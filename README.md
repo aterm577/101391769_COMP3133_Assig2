@@ -1,4 +1,5 @@
 # 101391769Comp3133Assig2
+I'm so sorry, but I submitted the wrong zip folder of my assig2, please download the assig2 from here. Thank you for you patience and understanding! I appreciate it! 
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.3.
 
